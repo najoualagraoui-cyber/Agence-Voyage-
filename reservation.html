@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Escape | Réservation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS commun -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="accueil.html" class="logo">
+            <span class="plane">✈</span>
+            <span>Travel Escape</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="accueil.html">Accueil</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="reservation.html" class="active">Réservation</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="destinations.html" class="reserve-btn">
+                Nos voyages <span>→</span>
+            </a>
+        </div>
+
+        <button class="menu-toggle" type="button"
+                aria-label="Menu" aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- BANNIÈRE -->
+    <section class="reservation-hero">
+
+        <div>
+            <p class="subtitle">TRAVEL ESCAPE</p>
+
+            <h1>Réservez votre voyage</h1>
+
+            <p>Votre prochaine aventure commence ici.</p>
+        </div>
+
+    </section>
+
+
+    <!-- FORMULAIRE -->
+    <main class="reservation-container">
+
+        <h2>Planifiez votre séjour</h2>
+
+        <p>
+            Remplissez le formulaire ci-dessous pour effectuer
+            votre réservation.
+        </p>
+
+        <form class="reservation-form" id="reservationForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom"
+                           placeholder="Votre nom complet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="exemple@gmail.com" required>
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone"
+                           placeholder="Votre numéro de téléphone"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+
+                    <select id="destination" name="destination" required>
+                        <option value="">Choisir une destination</option>
+                        <option value="Santorin">Santorin</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Dubaï">Dubaï</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Marrakech">Marrakech</option>
+                        <option value="Maldives">Maldives</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="depart">Date de départ</label>
+                    <input type="date" id="depart" name="depart"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="retour">Date de retour</label>
+                    <input type="date" id="retour" name="retour"
+                           required>
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <label for="voyageurs">Nombre de voyageurs</label>
+
+                <select id="voyageurs" name="voyageurs" required>
+                    <option value="">Choisir le nombre</option>
+                    <option value="1">1 voyageur</option>
+                    <option value="2">2 voyageurs</option>
+                    <option value="3">3 voyageurs</option>
+                    <option value="4">4 voyageurs</option>
+                    <option value="5">5 voyageurs ou plus</option>
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+                <label for="message">Message supplémentaire</label>
+
+                <textarea id="message" name="message"
+                          placeholder="Précisez vos demandes particulières..."></textarea>
+            </div>
+
+
+            <button type="submit">
+                Confirmer ma réservation →
+            </button>
+
+            <p id="confirmation" role="status"></p>
+
+        </form>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="destination-footer">
+
+        <a href="accueil.html" class="footer-logo">
+            ✈ Travel Escape
+        </a>
+
+        <p>
+            © 2026 Travel Escape - Tous droits réservés.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="reservation.js"></script>
+
+</body>
+</html>
