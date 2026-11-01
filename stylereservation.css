@@ -1,0 +1,63 @@
+
+/* ===== PAGE RESERVATION - COMPLEMENT ===== */
+
+.reservation-hero {
+    background: linear-gradient(
+        rgba(9, 25, 48, 0.65),
+        rgba(9, 25, 48, 0.65)
+    );
+    padding: 35px 20px;
+}
+
+.reservation-hero .subtitle {
+    margin-bottom: 15px;
+}
+
+.reservation-hero h1 {
+    margin-bottom: 15px;
+}
+
+.reservation-hero p:last-child {
+    color: #f5eee6;
+}
+
+.reservation-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.reservation-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+}
+
+.reservation-form button {
+    margin-top: 8px;
+}
+
+#confirmation {
+    text-align: center;
+    color: #287a45;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+
+    .reservation-form .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-container {
+        padding: 22px;
+    }
+
+}
