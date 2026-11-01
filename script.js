@@ -1,5 +1,4 @@
 
-// ===== MENU RESPONSIVE =====
 
 const menuButton = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");

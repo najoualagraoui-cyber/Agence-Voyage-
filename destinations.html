@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Escape | Destinations</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="accueil.html" class="logo">
+            <span class="plane">✈</span>
+            <span>Travel Escape</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="accueil.html">Accueil</a>
+
+            <a href="destinations.html" class="active">
+                Destinations
+            </a>
+
+            <a href="destinations.html#tours">Tours</a>
+
+            <a href="accueil.html#about">À propos</a>
+
+            <a href="accueil.html#contact">Contact</a>
+
+        </nav>
+
+        <div class="nav-right">
+
+            <a href="reservation.html" class="reserve-btn">
+                Réserver <span>→</span>
+            </a>
+
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Menu">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- BANNIERE PRINCIPALE -->
+    <section class="destination-hero">
+
+        <div class="destination-overlay">
+
+            <p class="destination-subtitle">
+                LE MONDE VOUS ATTEND
+            </p>
+
+            <h1>
+                Explorez le monde,<br>
+                vivez l'exceptionnel.
+            </h1>
+
+            <p>
+                Découvrez des destinations extraordinaires
+                et créez des souvenirs inoubliables.
+            </p>
+
+            <a href="#destinations-list" class="destination-hero-btn">
+                Explorer les destinations ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="destination-intro">
+
+        <p class="section-label">
+            NOS VOYAGES
+        </p>
+
+        <h2>
+            Où souhaitez-vous partir ?
+        </h2>
+
+        <p>
+            Des plages paradisiaques aux villes fascinantes,
+            trouvez le voyage qui correspond à vos envies.
+        </p>
+
+    </section>
+
+
+    <!-- FILTRES -->
+    <section class="destinations-container" id="destinations-list">
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">
+                Toutes
+            </button>
+
+            <button class="filter-btn" data-filter="europe">
+                Europe
+            </button>
+
+            <button class="filter-btn" data-filter="asie">
+                Asie
+            </button>
+
+            <button class="filter-btn" data-filter="afrique">
+                Afrique
+            </button>
+
+            <button class="filter-btn" data-filter="moyen-orient">
+                Moyen-Orient
+            </button>
+
+        </div>
+
+
+        <!-- CARTES DES DESTINATIONS -->
+        <div class="destination-grid">
+
+
+            <!-- SANTORIN -->
+            <article class="destination-card" data-category="europe">
+
+                <div class="destination-image">
+
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800"
+                         alt="Santorin en Grèce">
+
+                    <span class="destination-tag">
+                        POPULAIRE
+                    </span>
+
+                </div>
+
+                <div class="destination-details">
+
+                    <p class="country">🇬🇷 GRÈCE · EUROPE</p>
+
+                    <h3>Santorin</h3>
+
+                    <p class="destination-description">
+                        Découvrez les maisons blanches,
+                        les eaux bleues et les magnifiques couchers de soleil.
+                    </p>
+
+                    <div class="destination-bottom">
+
+                        <div>
+                            <span class="price-label">À partir de</span>
+                            <p class="price">799 €</p>
+                        </div>
+
+                        <a href="reservation.html?destination=Santorin"
+                           class="book-btn">
+                            Réserver →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- BALI -->
+            <article class="destination-card" data-category="asie">
+
+                <div class="destination-image">
+
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800"
+                         alt="Bali en Indonésie">
+
+                    <span class="destination-tag">
+                        COUP DE CŒUR
+                    </span>
+
+                </div>
+
+                <div class="destination-details">
+
+                    <p class="country">🇮🇩 INDONÉSIE · ASIE</p>
+
+                    <h3>Bali</h3>
+
+                    <p class="destination-description">
+                        Entre plages tropicales, temples traditionnels
+                        et nature luxuriante.
+                    </p>
+
+                    <div class="destination-bottom">
+
+                        <div>
+                            <span class="price-label">À partir de</span>
+                            <p class="price">749 €</p>
+                        </div>
+
+                        <a href="reservation.html?destination=Bali"
+                           class="book-btn">
+                            Réserver →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- DUBAI -->
+            <article class="destination-card" data-category="moyen-orient">
+
+                <div class="destination-image">
+
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800"
+                         alt="Dubaï">
+
+                </div>
+
+                <div class="destination-details">
+
+                    <p class="country">🇦🇪 ÉMIRATS ARABES · MOYEN-ORIENT</p>
+
+                    <h3>Dubaï</h3>
+
+                    <p class="destination-description">
+                        Une ville spectaculaire entre modernité,
+                        shopping et aventures dans le désert.
+                    </p>
+
+                    <div class="destination-bottom">
+
+                        <div>
+                            <span class="price-label">À partir de</span>
+                            <p class="price">899 €</p>
+                        </div>
+
+                        <a href="reservation.html?destination=Dubaï"
+                           class="book-btn">
+                            Réserver →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PARIS -->
+            <article class="destination-card" data-category="europe">
+
+                <div class="destination-image">
+
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"
+                         alt="Paris en France">
+
+                </div>
+
+                <div class="destination-details">
+
+                    <p class="country">🇫🇷 FRANCE · EUROPE</p>
+
+                    <h3>Paris</h3>
+
+                    <p class="destination-description">
+                        Une escapade romantique au cœur de la
+                        capitale de la mode et de la culture.
+                    </p>
+
+                    <div class="destination-bottom">
+
+                        <div>
+                            <span class="price-label">À partir de</span>
+                            <p class="price">599 €</p>
+                        </div>
+
+                        <a href="reservation.html?destination=Paris"
+                           class="book-btn">
+                            Réserver →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- MARRAKECH -->
+            <article class="destination-card" data-category="afrique">
+
+                <div class="destination-image">
+
+                    <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800"
+                         alt="Marrakech au Maroc">
+
+                </div>
+
+                <div class="destination-details">
+
+                    <p class="country">🇲🇦 MAROC · AFRIQUE</p>
+
+                    <h3>Marrakech</h3>
+
+                    <p class="destination-description">
+                        Explorez les souks colorés, les palais
+                        et les jardins de la ville rouge.
+                    </p>
+
+                    <div class="destination-bottom">
+
+                        <div>
+                            <span class="price-label">À partir de</span>
+                            <p class="price">399 €</p>
+                        </div>
+
+                        <a href="reservation.html?destination=Marrakech"
+                           class="book-btn">
+                            Réserver →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- MALDIVES -->
+            <article class="destination-card" data-category="asie">
+
+                <div class="destination-image">
+
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800"
+                         alt="Maldives">
+
+                </div>
+
+                <div class="destination-details">
+
+                    <p class="country">🇲🇻 MALDIVES · ASIE</p>
+
+                    <h3>Maldives</h3>
+
+                    <p class="destination-description">
+                        Profitez d'un séjour de rêve entre
+                        lagons turquoise et plages de sable blanc.
+                    </p>
+
+                    <div class="destination-bottom">
+
+                        <div>
+                            <span class="price-label">À partir de</span>
+                            <p class="price">1 099 €</p>
+                        </div>
+
+                        <a href="reservation.html?destination=Maldives"
+                           class="book-btn">
+                            Réserver →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- BANDEAU FINAL -->
+    <section class="destination-banner">
+
+        <p>VOTRE PROCHAINE AVENTURE COMMENCE ICI</p>
+
+        <h2>
+            Le voyage de vos rêves<br>
+            n'attend que vous.
+        </h2>
+
+        <a href="reservation.html">
+            Planifier mon voyage →
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="destination-footer">
+
+        <a href="accueil.html" class="footer-logo">
+            ✈ Travel Escape
+        </a>
+
+        <p>
+            © 2026 Travel Escape - Tous droits réservés.
+        </p>
+
+    </footer>
+
+
+    <script src="destinations.js"></script>
+
+</body>
+</html>
