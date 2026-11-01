@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel | Accueil</title>
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="accueil.html" class="logo">
+            <span class="plane">✈</span>
+            <span>Travel</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="accueil.html" class="active">Accueil</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="#tours">Tours</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+            <button class="search-btn" aria-label="Rechercher">⌕</button>
+
+            <a href="reservation.html" class="reserve-btn">
+                Réserver <span>→</span>
+            </a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+
+    </header>
+
+
+    <!-- PAGE PRINCIPALE -->
+    <main>
+
+        <section class="hero">
+
+            <!-- TEXTE PRINCIPAL -->
+            <div class="hero-content">
+
+                <p class="subtitle">
+                    AGENCE DE VOYAGE PREMIUM
+                </p>
+
+                <h1 id="hero-title">
+                    Voyagez avec style
+                </h1>
+
+                <p class="hero-description" id="hero-description">
+                    Des expériences uniques, des souvenirs éternels.
+                </p>
+
+                <a href="destinations.html" class="discover-btn">
+                    Découvrir nos destinations <span>→</span>
+                </a>
+
+                <!-- DIAPORAMA -->
+                <div class="slider-controls">
+
+                    <span id="slide-number">01</span>
+                    <span class="separator">/</span>
+                    <span>03</span>
+
+                    <button id="prev-slide">‹</button>
+                    <button id="next-slide">›</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESTINATIONS PHARES -->
+            <aside class="featured-box">
+
+                <h2>Nos destinations phares</h2>
+
+                <div class="gold-line"></div>
+
+
+                <div class="featured-item">
+
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=300"
+                         alt="Santorin">
+
+                    <div class="featured-info">
+                        <h3>Santorin</h3>
+                        <p>À partir de 799 €</p>
+                    </div>
+
+                    <a href="reservation.html?destination=Santorin">›</a>
+
+                </div>
+
+
+                <div class="featured-item">
+
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=300"
+                         alt="Dubaï">
+
+                    <div class="featured-info">
+                        <h3>Dubaï</h3>
+                        <p>À partir de 899 €</p>
+                    </div>
+
+                    <a href="reservation.html?destination=Dubaï">›</a>
+
+                </div>
+
+
+                <div class="featured-item">
+
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=300"
+                         alt="Bali">
+
+                    <div class="featured-info">
+                        <h3>Bali</h3>
+                        <p>À partir de 749 €</p>
+                    </div>
+
+                    <a href="reservation.html?destination=Bali">›</a>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
